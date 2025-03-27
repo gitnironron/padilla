@@ -35,9 +35,9 @@ i{
     cursor: pointer;
 }
 
-.header-box-for-menu{
+/* .header-box-for-menu{
     display: none;
-}
+} */
 
 .section-one{
     width: 100%;
@@ -95,7 +95,7 @@ img{
 
 @media (max-width: 1024px){
     .mawalaka{
-        display: none;
+        margin: 0;
     }
 
     .header-box-for-menu{
@@ -107,8 +107,41 @@ img{
     }
 }
 
-@media (max-width: 500px){
+/* @media (max-width: 500px){
     .myFour{
         grid-template-columns: 1fr;
+    }
+    .mee{
+        padding: 10px;
+        
+    }
+    .header{
+        height: 100px;
+    }
+} */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .mee {
+        display: block;
+        text-align: center;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .mee:hover {
+        background-color: gray;
     }
 }

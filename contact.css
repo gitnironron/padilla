@@ -197,3 +197,29 @@ i {
         font-size: 14px;
     }
 }
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .mee {
+        display: block;
+        text-align: center;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .mee:hover {
+        background-color: gray;
+    }
+}
+
