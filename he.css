@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mycss{
+    color: blue;
+}
+
+.header{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: black;
+}
+
+.mee{
+    text-decoration: none;
+    color: white;
+    padding-right: 1rem;
+}
+
+.mee:hover{
+    transition: 0.3s ease-in-out;
+
+    background-color: gray;
+    border-radius: 20px;
+}
+
+i{
+    color: white;
+    cursor: pointer;
+}
+
+.header-box-for-menu{
+    display: none;
+}
+
+.section-one{
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px;
+   
+    gap: 10px;
+    padding: 15px;
+    
+}
+
+.ye{
+    padding: 10px 10px;
+
+    border-radius: 20px;
+    border-radius: 50% 10% 50% 10%
+                /   10% 50% 10% 50%;
+                box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8)
+}
+
+.yu{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(1, 1, 1, 0.9);
+}
+
+.myFour{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.9);
+    background-color: rgb(255, 255, 255);
+    
+    border-radius: 20px;           
+}
+
+.box{
+    overflow: hidden;
+    border-radius: 30px 50px 100px 50px
+                /   100px 50px 50px 50px;
+
+                box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8);
+                background-color: rgb(255, 255, 255);
+    
+    margin: 5px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px){
+    .mawalaka{
+        display: none;
+    }
+
+    .header-box-for-menu{
+        display: block;
+    }
+
+    .section-one{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px){
+    .myFour{
+        grid-template-columns: 1fr;
+    }
+}
